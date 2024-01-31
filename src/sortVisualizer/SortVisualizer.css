@@ -1,0 +1,95 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+.array-container {
+  align-items: center;
+  display: flex;
+  margin-top: auto;
+}
+
+.array-bar {
+  background-color: blueviolet;
+  border-radius: 0.5em;
+  margin: 0.15%;
+}
+
+.app-footer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.app-button {
+  border-radius: 0.4em;
+  border-width: 0.05em;
+  color: rgb(13, 13, 13);
+  padding: 0.5em;
+  margin: 0 0.5em;
+  background-color: transparent;
+}
+
+.app-button:focus {
+  outline: none;
+}
+
+.app-button:hover {
+  color: #333;
+  background-color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+  .array-container {
+    flex-wrap: wrap;
+  }
+
+  .array-bar {
+    margin: 0.5%;
+  }
+
+  .app-button {
+    margin: 0.3em;
+  }
+}
+
+.app-button:focus {
+  outline: none;
+}
+
+.app-button:hover {
+  color: #333;
+  background-color: #eaeaea;
+}
+
+.visualizer-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 700px) {
+  /* Adjustments for larger screens */
+  .app-footer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Adjustments for smaller screens */
+  .array-bar {
+    /* Reduce margin between bars for smaller screens */
+    margin: 0.1%;
+  }
+
+  .app-footer {
+    /* Decrease padding for footer buttons */
+    padding: 0.5em;
+  }
+
+  .app-button {
+    /* Adjust button padding for smaller screens */
+    padding: 0.3em;
+  }
+}
